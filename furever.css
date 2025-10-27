@@ -1,0 +1,51 @@
+body {
+    background-color: #E1CCFF;
+    background-image: url("img/flowerbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #E1CCFF;
+    font-family:sans-serif, serif;
+}
+header {
+    background-color: #FBB03B;
+    color: #FF00FF;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+main {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 2em;
+      padding-top: 0;
+      display: block;
+      background-color:#E1CCFF;
+      overflow: auto;
+      color:black;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topnav {
+    position: relative;
+    overflow: hidden;
+}
+.topnav a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+#homemain {
+    background-color: #E1CCFF;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
