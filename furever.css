@@ -16,7 +16,7 @@ nav {
     background-color: white;
     font-weight: bold;
     font-size: 1.5em;
-
+    text-align: center;
 }
 main {
       padding-left: 0;
@@ -33,19 +33,15 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-.topnav {
-    position: relative;
-    overflow: hidden;
-}
-.topnav a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-}
 #homemain {
     background-color: #E1CCFF;
     background-size: 100%;
     background-repeat: no-repeat;
 
+}
+#wrapper {
+    width: 90%;
+    background-color: #E1CCFF;
+    margin-left: auto;
+    margin-right: auto;
 }
