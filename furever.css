@@ -1,22 +1,31 @@
+
 body {
     background-color: #E1CCFF;
     background-image: url("img/flowerbg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: #E1CCFF;
-    font-family:sans-serif, serif;
+    color: #4B0082;
+    font-family: gayathri;
+    font-size: large;
 }
 header {
     background-color: #FBB03B;
     color: #FF00FF;
     background-repeat: no-repeat;
-}
-nav {
-    background-color: white;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-family: mali;
+    padding: 1em;
     text-align: center;
+    margin: 0;
+}
+h1 {
+    font-family: mali;
+    font-size:xx-large;
+    color: #4B0082;
+}
+h2 {
+    text-align: center;
+    color: #4B0082;
 }
 main {
       padding-left: 0;
@@ -26,7 +35,29 @@ main {
       display: block;
       background-color:#E1CCFF;
       overflow: auto;
-      color:black;
+      color:#4B0082;
+}
+@font-face {
+    font-family: mali;
+    src: url(fonts/Mali/Mali-Bold.ttf);
+}
+@font-face {
+    font-family: gayathri;
+    src: url(fonts/Gayathri/Gayathri-Regular.ttf);
+}
+@font-face {
+    font-family: gaybold;
+    src: url(fonts/Gayathri/Gayathri-Bold.ttf);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FBB03B;
+    color: #FF00FF;
+    text-align: center;
 }
 .center {
     display: block;
@@ -37,11 +68,40 @@ main {
     background-color: #E1CCFF;
     background-size: 100%;
     background-repeat: no-repeat;
-
 }
-#wrapper {
-    width: 90%;
+
+/* navigation */
+.topnav {
+    background-color: white;
+    text-align: center;
+    font-style: bold;
+}
+
+.topnav a {
+    color: #4B0082;
+    text-decoration: none;
+    font-family: gaybold;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #6900ff;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    transform: scale(1.05);
+}
+
+.topnav a:visited {
+        color: #E1CCFF;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.wrapper {
+    width: 95%;
     background-color: #E1CCFF;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
