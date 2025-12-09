@@ -1,6 +1,7 @@
 
 body {
     background-color: #E1CCFF;
+    
     background-image: url("img/flowerbg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,8 +101,6 @@ main {
     display: inline-block;
     transition: all 0.3s ease;
 }
-.wrapper {
-    width: 95%;
-    background-color: #E1CCFF;
-    margin: auto;
+div.backop {
+    opacity: .9;
 }
