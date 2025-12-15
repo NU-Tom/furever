@@ -33,12 +33,16 @@ main {
       padding-right: 0;
       padding-bottom: 2em;
       padding-top: 0;
-      display: block;
-      background-color:#E1CCFF;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+      background-color: rgba(225, 204, 225, 0.8);
       overflow: auto;
       color:#4B0082;
-      opacity: .9;
+
 }
+
 
 /* in site fonts */
 @font-face {
@@ -102,14 +106,244 @@ main {
 } */
 /* layout */
 
-.floatright {
-    float: right;
-    padding-left: 2em;
-    padding-right: 2em;
+#floatleft {
+    flex: 2;
 }
 
-.floatleft {
-    float: left;
-    padding-left: 2em;
-    padding-right: 2em;
+#floatright {
+    flex: 1;
+}
+
+#floatright img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    gap; 20px;
+}
+main > section {
+    width: 100%;
+}
+
+/* Pricing Table Styles */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FF00FF;
+}
+
+.pricing-table thead {
+    background-color: #FBB03B;
+    color: #000000;
+}
+
+.pricing-table th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #E1CCFF;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .pricing-table {
+        font-size: 0.9em;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pricing-table thead {
+        display: none;
+    }
+    
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+    
+    .pricing-table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
+    
+    .pricing-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+.pet-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #f5f5f5;
+}
+
+/* responsive design */
+
+/* Tablets and smaller laptops (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Adjust body font size */
+    body {
+        font-size: medium;
+    }
+    
+    /* Adjust header sizing */
+    h1 {
+        font-size: x-large;
+    }
+    
+    h2 {
+        font-size: large;
+    }
+    
+    /* Stack main content vertically */
+    main {
+        flex-direction: column;
+        padding: 1em;
+        margin: 0.5em;
+    }
+    
+    #floatleft {
+        flex: 1;
+        width: 100%;
+    }
+    
+    #floatright {
+        flex: 1;
+        width: 100%;
+    }
+    
+    /* Adjust navigation for tablets */
+    .topnav a {
+        padding: 0.4em 0.8em;
+        font-size: 0.9em;
+    }
+    
+    /* Footer adjustments */
+    .footer {
+        font-size: 0.9em;
+        padding: 0.8em;
+    }
+    
+    /* Pricing table adjustments */
+    .pricing-table {
+        font-size: 0.9em;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 10px;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    /* Adjust body font */
+    body {
+        font-size: small;
+    }
+    
+    /* Smaller header text */
+    h1 {
+        font-size: large;
+    }
+    
+    h2 {
+        font-size: medium;
+    }
+    
+    /* Tighter spacing on mobile */
+    main {
+        padding: 0.5em;
+        margin: 0.25em;
+        gap: 10px;
+    }
+    
+    header {
+        padding: 0.5em;
+    }
+    
+    /* Stack navigation vertically for mobile */
+    .topnav {
+        padding: 0;
+    }
+    
+    .topnav a {
+        display: block;
+        padding: 0.8em;
+        border-bottom: 1px solid #E1CCFF;
+    }
+    
+    .topnav a:hover {
+        font-size: 1em; /* Disable size change on mobile */
+        transform: none; /* Disable transform on mobile */
+    }
+    
+    /* Footer for mobile */
+    .footer {
+        font-size: 0.8em;
+        padding: 0.6em;
+        position: relative; /* Change from fixed on small screens */
+    }
+    
+    /* Responsive pricing table for mobile */
+    .pricing-table thead {
+        display: none;
+    }
+    
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+    
+    .pricing-table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .pricing-table td:last-child {
+        border-bottom: none;
+    }
+    
+    .pricing-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #4B0082;
+    }
+}
+
+/* Very small phones (360px and below) */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: medium;
+    }
+    
+    .topnav a {
+        padding: 0.6em;
+        font-size: 0.85em;
+    }
 }

@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>Furever Home - Animal Shelter</title>
+    
+<head>
+        <title>Furever Home - Adoption</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Furever Home Animal Shelter">
+        <meta name="keywords" content="animal, shelter, adoption, cat, dog,">
         <link rel="stylesheet" href="furever.css">
-    </head>
-    <body>
-        <header>
-            <h1>Tom Gibbons Presents:<img src="img/Logo.svg" alt="Furever Home" class="center"></h1>
-        </header>
-        <nav class="topnav">
-            <a href="index.html">Home</a>&nbsp;
-            <a href="adopt.html">Adopt</a>&nbsp;
-            <a href="foster.html">Foster</a>&nbsp;
-            <a href="surrender.html">Surrender</a>&nbsp;
-            <a href="train.html">Dog Training</a>&nbsp;
-            <a href="help.html">Volunteer</a>&nbsp;
-            <a href="food.html">Food Bank</a>&nbsp;
-        </nav>
+</head>
+
+<body>
+        
+    <header>
+        <h1>Tom Gibbons Presents:</h1>
+        <img src="img/Logo.svg" alt="Furever Home" class="center">
+    </header>
+    
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="adopt.html">Adopt</a>
+        <a href="foster.html">Foster</a>
+        <a href="surrender.html">Surrender</a>
+        <a href="train.html">Dog Training</a>
+        <a href="help.html">Volunteer</a>
+        <a href="food.html">Food Bank</a>
+    </nav>
         <main>
-            <h2>Meet Your New Furever Friend!</h2>
+            <section id="floatleft">
+            <h2>Meet Your New Furever Friend!</h2><br>
             <p>
                 Here are the animals that a currently available for adoption. Please visit frequently as we are always adding new animals!
             </p>
-            <ul>
-                <li> Adoption Fees:</li>
-                <li>Cats: $100</li>
-                <li>Dogs: $100</li>
-                <li>Small Critters: $50</li>
-                <li>Reptiles: Vary</li>
-            </ul>
-            <p>
-        </div>
+        </section>
+<section>
+    <h2>Adoption Fees</h2>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>Animal Type</th>
+                <th>Adoption Fee</th>
+                <th>What's Included</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Animal Type">Cats</td>
+                <td data-label="Adoption Fee">$100</td>
+                <td data-label="What's Included">Spay/neuter, vaccinations, microchip</td>
+            </tr>
+            <tr>
+                <td data-label="Animal Type">Dogs</td>
+                <td data-label="Adoption Fee">$150</td>
+                <td data-label="What's Included">Spay/neuter, vaccinations, microchip, training session</td>
+            </tr>
+            <tr>
+                <td data-label="Animal Type">Small Critters</td>
+                <td data-label="Adoption Fee">$50</td>
+                <td data-label="What's Included">Health check, starter supplies</td>
+            </tr>
+            <tr>
+                <td data-label="Animal Type">Reptiles</td>
+                <td data-label="Adoption Fee">$75-$200</td>
+                <td data-label="What's Included">Health check, care guide, habitat consultation</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section>
+    <h2>Meet Our Available Pets</h2>
+    <div class="pet-grid">
+        <article class="pet-card">
+            <img src="img/adopt/dog-max.jpeg" alt="Max - Friendly Golden Retriever">
+            <h3>Max</h3>
+            <p>Golden Retriever, 3 years old</p>
+        </article>
+        <article class="pet-card">
+            <img src="img/adopt/cat-luna.jpeg" alt="Luna - Playful Tabby Cat">
+            <h3>Luna</h3>
+            <p>Tabby Cat, 2 years old</p>
+        </article>
+        <article class="pet-card">
+            <img src="img/adopt/crit-pip.jpeg" alt="Pip - Tri Color Guinea Pig"
+            <h3>Pip</h3>
+            <p>Guinea Pig, 2 years old </p>
+        </article>
+        <article class="pet-card">
+            <img src="img/adopt/rept-coold.jpeg" alt="Cool Dude - Iquana"
+            <h3>Cool Dude</h3>
+            <p>Iquana - 5 years old </p>
+        </article>
+    </div>
+</section>
         </main>
     </body>
 </html>
